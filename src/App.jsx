@@ -7,7 +7,7 @@ import './App.css'
 import ProgressBar from './components/ProgressBar'
 
 
-const totalMs = 20 * 1000
+const totalMs = 15 * 1000
 const intrval = 1 * 1000
 const totalCycle = totalMs / intrval
 const ProgressMade = (intrval / totalMs) * 100
