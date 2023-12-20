@@ -1,39 +1,81 @@
-.App{
-  background-color: white;
-  height: 100vh;
-  width:100vw;
+/* Navbar styles */
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 196, 0);
+  padding: 10px; /* Adjusted padding */
+}
 
-}
-.serach-bar-cont{
-  padding-top: 20vh;
-  width: 40%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 200px;
-}
-.input-wrapper{
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  border-radius: 10px;
-  height: 2.5rem;
-  padding: 0 15px;
-  box-shadow: 0px opx 8px black;
-  display: flex;
-  align-items: center;
-}
+/* Search bar styles */
 input {
   color: white;
   background-color: black;
   border: none;
-  height: 100%;
-  width: 100%;
-  font-size: 1.25rem;
-  margin-left: 5px;
+  height: 30px; /* Adjusted height */
+  width: 150px; /* Adjusted width */
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-right: 10px; /* Added margin for spacing */
+}
+
+/* Search button styles */
+.search-btn {
+  color: #000;
+  background-color: chartreuse;
+  border-radius: 8px;
+  width: 70px; /* Adjusted width */
+}
+
+/* Cart button styles */
+.Cart-btn {
+  color: #000;
+  background-color: chartreuse;
+  border-radius: 8px;
+  width: 70px; /* Adjusted width */
+}
+
+.Home {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  justify-content: space-around; /* Adjusted justify-content */
+  background-color: rgb(247, 247, 247);
+  padding: 10px;
+}
+
+.Card {
+  background-color: rgb(203, 207, 207);
+  width: 20%;
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Align content in a column */
+  align-items: center; /* Center content horizontally */
+  border-radius: 10px; /* Add border radius */
+  overflow: hidden; /* Hide overflowing content, ensuring the border radius is applied */
+}
+.Card img {
+  width: 80%; /* Make the image fill the container */
+  height: auto; /* Maintain the image's aspect ratio */
+  margin: 10px 20px 10px 10px;
+  border-radius: 10px;
 
 }
 
-input:focus{
-   outline: none;
+@media only screen and (max-width: 600px) {
+  .Nav {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    
+   
+  }
+  input, .search-btn, .Cart-btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .Cart-btn {
+    margin-left: auto; /* Push Cart-btn to the right */
+  }
+  .Card {
+    width: 100%;
+  }
 }
