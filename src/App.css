@@ -1,4 +1,9 @@
 /* Navbar styles */
+
+body{
+  background-color: #000;
+  color: aliceblue;
+}
 .Nav {
   display: flex;
   justify-content: space-between;
